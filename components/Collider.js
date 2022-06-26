@@ -18,25 +18,7 @@ AFRAME.registerComponent("flying-birds", {
   },
   flyingBirds: (id, position) => {
     //Get the terrain element
-    var terrainEl = document.querySelector("#terrain");
-
-    //creating the bird model entity
-    var birdEl = document.createElement("a-entity");
-
-    //Setting multiple attributes
-    birdEl.setAttribute("id", id);
-
-    birdEl.setAttribute("position", position);
-    birdEl.setAttribute("scale", { x: 500, y: 500, z: 500 });
-
-    birdEl.setAttribute("gltf-model", "./assets/models/flying_bird/scene.gltf");
-
-    //animated models
-    birdEl.setAttribute("animation-mixer", {});
-
-    //append the bird entity as the child of the terrain entity
-    terrainEl.appendChild(birdEl);
-  }
+   
 });
 
 

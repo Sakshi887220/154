@@ -20,18 +20,7 @@ AFRAME.registerComponent("target-ring", {
 
   createRings: function(id, position) { 
     
-    var terrainEl = document.querySelector("#terrain");
-
-    var ringEl = document.createElement("a-entity");
-
-    ringEl.setAttribute("id",id);
-    ringEl.setAttribute("position",position);
-    
-    ringEl.setAttribute("material","color","#ff9100");
-    
-    ringEl.setAttribute("geometry",{ primitive: "torus",radius: 8 });   
-
-    terrainEl.appendChild(ringEl);
+   
   }
 });
 
